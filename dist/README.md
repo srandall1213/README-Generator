@@ -1,34 +1,34 @@
-# 
+# sample title
 
-[![License: GNU GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License: APACHE 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Description
-
+sample description
 
 ## Table of Contents
-  - [Installation](#Installation)
-  - [Usage](#Usage)
-  - [Contributing](#Contributing)
-  - [Tests](#Tests)
-  - [License](#License)
-  - [Questions](#Questions)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [License](#license)
+  - [Questions](#questions)
 
-## Installation
+## Installation 
+sample install steps
 
-
-## Usage
-
+## Usage 
+sample user info
 
 ## Contributing
-
+sample contribution guidelines
 
 ## Tests
-
+test commands
 
 ## License
-The project is licensed under the [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/) license.
+The project is licensed under the [APACHE 2.0](https://choosealicense.com/licenses/apache-2.0/) license.
 
 
 ## Questions
-Please email me at  if you have any questions about the repo. You can find more of my work at [](https://github.com//).
+Please email me at srandall1213@gmail.com if you have any questions about the repo. You can find more of my work at [srandall1213](https://github.com/srandall1213/).
 

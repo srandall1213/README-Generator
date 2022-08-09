@@ -8,8 +8,6 @@ function renderLicenseBadge(license) {
       return '[![License: GNU GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)'
     case 'APACHE2':
       return '[![License: APACHE 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
-    case 'GPL3':
-      return '[![License: GPL 3.0](https://img.shields.io.badge.License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
     case 'BSD3':
       return '[![License: BSD 3](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)'
     case 'None':
@@ -27,8 +25,6 @@ function renderLicenseLink(license) {
       return '[GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/)'
     case 'APACHE2':
       return '[APACHE 2.0](https://choosealicense.com/licenses/apache-2.0/)'
-    case 'GPL3':
-      return '[GPL 3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)'
     case 'BSD3':
       return '[BSD 3](https://www.gnu.org/licenses/gpl-3.0.en.html)'
     case 'None':
@@ -56,17 +52,17 @@ ${renderLicenseBadge(data.license)}
 ${data.description}
 
 ## Table of Contents
-  - [Installation](#Installation)
-  - [Usage](#Usage)
-  - [Contributing](#Contributing)
-  - [Tests](#Tests)
-  - [License](#License)
-  - [Questions](#Questions)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [License](#license)
+  - [Questions](#questions)
 
-## Installation
+## Installation 
 ${data.installation}
 
-## Usage
+## Usage 
 ${data.usage}
 
 ## Contributing

@@ -46,7 +46,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Which license is needed for your project?',
-        choices: ['MIT', 'GNUGPLv3', 'APACHE2', 'GPL3', 'BSD3', 'None']
+        choices: ['MIT', 'GNUGPLv3', 'APACHE2', 'BSD3', 'None']
     },
     //QUESTIONS SECTION
     {
