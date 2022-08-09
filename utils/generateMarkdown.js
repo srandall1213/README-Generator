@@ -1,18 +1,49 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  const badges = {
+    mit: '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
+    gnugplv3: '[![License: GNU GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)',
+    apache2: '[![License: APACHE 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)',
+    gpl3: '[![License: GPL 3.0](https://img.shields.io.badge.License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
+    bsd3: '[![License: BSD 3](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)'
+  }
+
+  if (license === "None") {
+    return "";
+  } else {
+    return (badges[license]);
+  }
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+
+  switch (license) {
+    case 'MIT': 
+      return '[MIT](https://choosealicense.com/licenses/mit/)'
+    case 'GNUGPLv3':
+      return '[GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/)'
+    case 'APACHE2':
+      return '[APACHE 2.0](https://choosealicense.com/licenses/apache-2.0/)'
+    case 'GPL3':
+      return '[GPL 3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)'
+    case 'BSD3':
+      return '[BSD 3](https://www.gnu.org/licenses/gpl-3.0.en.html)'
+    case 'None':
+      return ""
+  }
+
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  if (license === "") {
-    return ""
+  if (license === "None") {
+    return "";
   } else {
-    return `The project is licensed under the ${license} license.`
+    return `The project is licensed under the ${renderLicenseLink(license)} license.`;
   }
 } 
 
@@ -20,8 +51,7 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
 
-## License Badge
-![GitHub license](url to that license) 
+![License Badge](${renderLicenseBadge(data.license)}) 
 
 ## Description
 ${data.description}
@@ -48,6 +78,7 @@ ${data.tests}
 
 ## License
 ${renderLicenseSection(data.license)}
+
 
 ## Questions
 Please email me at ${data.email} if you have any questions about the repo. You can find more of my work at [${data.username}](https://github.com/${data.username}/).

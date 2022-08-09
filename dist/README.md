@@ -1,10 +1,9 @@
-# test
+# 
 
-## License Badge
-![GitHub license](url to that license) 
+![License Badge](undefined) 
 
 ## Description
-test
+
 
 ## Table of Contents
   - [Installation](#Installation)
@@ -15,20 +14,21 @@ test
   - [Questions](#Questions)
 
 ## Installation
-test
+
 
 ## Usage
-test
+
 
 ## Contributing
-test
+
 
 ## Tests
-test
+
 
 ## License
-The project is licensed under the MIT license.
+The project is licensed under the [GPL 3.0](https://www.gnu.org/licenses/gpl-3.0.en.html) license.
+
 
 ## Questions
-Please email me at test if you have any questions about the repo. You can find more of my work at [test](https://github.com/test/).
+Please email me at  if you have any questions about the repo. You can find more of my work at [](https://github.com//).
 
