@@ -1,25 +1,25 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  const badges = {
-    mit: '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
-    gnugplv3: '[![License: GNU GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)',
-    apache2: '[![License: APACHE 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)',
-    gpl3: '[![License: GPL 3.0](https://img.shields.io.badge.License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
-    bsd3: '[![License: BSD 3](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)'
-  }
-
-  if (license === "None") {
-    return "";
-  } else {
-    return (badges[license]);
+  switch (license) {
+    case 'MIT': 
+      return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
+    case 'GNUGPLv3':
+      return '[![License: GNU GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)'
+    case 'APACHE2':
+      return '[![License: APACHE 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
+    case 'GPL3':
+      return '[![License: GPL 3.0](https://img.shields.io.badge.License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
+    case 'BSD3':
+      return '[![License: BSD 3](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)'
+    case 'None':
+      return ""
   }
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-
   switch (license) {
     case 'MIT': 
       return '[MIT](https://choosealicense.com/licenses/mit/)'
@@ -34,7 +34,6 @@ function renderLicenseLink(license) {
     case 'None':
       return ""
   }
-
 }
 
 // TODO: Create a function that returns the license section of README
@@ -51,7 +50,7 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
 
-![License Badge](${renderLicenseBadge(data.license)}) 
+${renderLicenseBadge(data.license)}
 
 ## Description
 ${data.description}

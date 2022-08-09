@@ -1,6 +1,6 @@
 # 
 
-![License Badge](undefined) 
+[![License: GNU GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ## Description
 
@@ -26,7 +26,7 @@
 
 
 ## License
-The project is licensed under the [GPL 3.0](https://www.gnu.org/licenses/gpl-3.0.en.html) license.
+The project is licensed under the [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/) license.
 
 
 ## Questions
