@@ -15,8 +15,7 @@ const questions = [
     {
         type: 'input',
         name: 'description',
-        message: 
-        'Please write a brief description of your project.\n Use the following questions as a guide: \n - What was your motivation?\n - Why did you build this project?\n - What problem does it solve?\n - What did you learn?\n',
+        message: 'Please write a brief description of your project.',
     },
     //INSTALLATION SECTION
     {
@@ -75,7 +74,7 @@ function init() {
     return inquirer.prompt(questions)
     .then((data) => {
         const rmData = generateMarkdown(data);
-        writeToFile('README.md', rmData);
+        writeToFile('dist/README.md', rmData);
     })
 };
 
